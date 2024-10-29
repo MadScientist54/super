@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{& load crispy_forms_tags %}
+
+{% block usuario %}
+
+<!-- Section: Design Block -->
+<section class="text-center">
+    <div class="card mx-4 mx-md-5 shadow-5-strong" style="margin-top: 20%;">
+        <div class="card-body py-5 px-md-5">
+            <div class="col-lg-8">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <!-- Email input -->
+
+                    <!-- submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">
+                        Entrar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section: Design Block -->
+
+{% endblock usuario %}
